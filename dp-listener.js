@@ -6,9 +6,9 @@ const chokidar = require('chokidar')
 
 const settings = standardSettings.getSettings()
 
-var path = settings['autoUpload']['path']
-var maxParrallel = settings['autoUpload']['maxParallel']
-var altruistAPIURL = settings['autoUpload']['altruistAPIURL']
+var path = settings['dp-listener']['path']
+var maxParrallel = settings['dp-listener']['maxParallel']
+var altruistAPIURL = settings['dp-listener']['altruistAPIURL']
 
 var watcher = chokidar.watch(path, {
   ignored: /(^|[/\\])\../,
